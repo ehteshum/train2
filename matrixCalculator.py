@@ -4,7 +4,7 @@ from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dotenv import load_dotenv
 
-load_dotenv('/etc/secrets/.env')
+load_dotenv()
 
 SEAT_TYPES = [
     "S_CHAIR", "SHOVAN", "SNIGDHA", "F_SEAT", "F_CHAIR", "AC_S", "F_BERTH", "AC_B", "SHULOV", "AC_CHAIR"
