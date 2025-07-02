@@ -632,3 +632,23 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [🌐 Live Demo](https://seat.onrender.com) | [📧 Feedback](https://forms.gle/NV72PC1z75sq77tg7) | [⭐ Star on GitHub](https://github.com/nishatrhythm/Bangladesh-Railway-Train-Seat-Matrix-Web-Application)
 
 </div>
+
+## Deploying on Render
+
+To deploy this application on [Render](https://render.com/):
+
+1. **Push your code to a Git repository** (GitHub, GitLab, or Bitbucket).
+2. **Create a new Web Service** on Render and connect your repository.
+3. **Set the build and start commands:**
+   - **Build Command:** (leave blank for Python projects)
+   - **Start Command:** `gunicorn app:app --log-level=info --access-logfile=-`
+4. **Add environment variables** in the Render dashboard:
+   - `FIXED_MOBILE_NUMBER` (your mobile number)
+   - `FIXED_PASSWORD` (your password)
+5. **Ensure the following files are present in your repo:**
+   - `requirements.txt`
+   - `Procfile`
+   - `.env.example` (for reference, do not include real secrets)
+6. **Deploy!** Render will build and start your app. You will get a public URL when it is live.
+
+For more details, see the official [Render Python deployment guide](https://render.com/docs/deploy-python).
